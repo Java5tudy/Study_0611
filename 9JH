@@ -1,0 +1,20 @@
+class Solution {
+    public int[] solution(int n, int m) {
+
+        int yak = m/n;
+        int na = m%n;
+        int bae;
+
+        if(na !=0) {
+        	bae = yak*na*n;
+        } else {
+        	bae = yak*n;
+        }
+        
+        int[] answer = new int[2];
+        answer[0] = yak;
+        answer[1] = bae;
+        
+        return answer;
+    }
+}
